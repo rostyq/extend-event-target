@@ -61,7 +61,7 @@ export default function<T extends object>(obj: T): T {
       );
     }
 
-    if (typeof listener !== "object") {
+    if (!(listener instanceof Object)) {
       throw new TypeError(
         "Failed to execute 'removeEventListener' on 'EventTarget': parameter 2 is not of type 'Object'."
       )
