@@ -4,7 +4,7 @@ import { dtsPlugin as dts } from "esbuild-plugin-d.ts";
 const watch = !!process.argv.find(v => v === "watch");
 
 const common = {
-  entryPoints: [ "./extend-event-target.js" ],
+  entryPoints: [ "./src/extend-event-target.js" ],
   platform: "browser",
   bundle: true,
   watch,

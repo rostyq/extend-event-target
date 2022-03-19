@@ -8,6 +8,6 @@
     "removeComments": true
   },
   "files": [
-    "extend-event-target.ts"
+    "src/extend-event-target.ts"
   ]
 }
