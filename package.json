@@ -1,5 +1,6 @@
 {
   "name": "extend-event-target",
+  "description": "Add EventTarget interface to existing object",
   "version": "1.0.0",
   "browser": "dist/extend-event-target.min.js",
   "module": "dist/extend-event-target.js",
