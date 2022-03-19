@@ -6,7 +6,6 @@
   "types": "dist/extend-event-target.d.ts",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "dev": "npm run build -- watch",
     "prepare": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch"
