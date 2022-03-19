@@ -18,7 +18,7 @@ type TypeListeners = Map<string, Listeners>;
  * @param obj 
  * @returns obj
  */
-export default function(obj: object): object {
+export default function<T extends object>(obj: T): T {
   if (!Object.isExtensible(obj))
     throw new TypeError(`Object '${obj.toString()}' is not extensible.`);
   
