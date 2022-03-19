@@ -32,13 +32,13 @@ export default function(obj: object): object {
   ): void {
     if (arguments.length < 2) {
       throw new TypeError(
-        `Failed to execute 'addEventListener' on 'EventTarget': 2 arguments required, but only ${arguments.length} present.`
+        "Failed to execute 'addEventListener' on 'EventTarget': 2 arguments required, but only ${arguments.length} present."
       );
     }
 
     if (typeof listener !== "object") {
       throw new TypeError(
-        `TypeError: Failed to execute 'addEventListener' on 'EventTarget': parameter 2 is not of type 'Object'.`
+        "TypeError: Failed to execute 'addEventListener' on 'EventTarget': parameter 2 is not of type 'Object'."
       );
     }
 
@@ -63,7 +63,7 @@ export default function(obj: object): object {
 
     if (typeof listener !== "object") {
       throw new TypeError(
-        `Failed to execute 'removeEventListener' on 'EventTarget': parameter 2 is not of type 'Object'.`
+        "Failed to execute 'removeEventListener' on 'EventTarget': parameter 2 is not of type 'Object'."
       )
     }
 
@@ -76,7 +76,7 @@ export default function(obj: object): object {
   prototype.dispatchEvent = function(event: Event): boolean {
     if (!(event instanceof Event)) {
       throw new TypeError(
-        `Failed to execute 'dispatchEvent' on 'EventTarget': parameter 1 is not of type 'Event'.`
+        "Failed to execute 'dispatchEvent' on 'EventTarget': parameter 1 is not of type 'Event'."
       );
     }
 
