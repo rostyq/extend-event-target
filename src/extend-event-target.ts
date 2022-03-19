@@ -106,6 +106,9 @@ export default function(obj: object): object {
         timeStamp: event.timeStamp,
         type,
 
+        // @ts-ignore
+        detail: event.detail,
+
         composedPath() { return [] },
         preventDefault() {},
         stopImmediatePropagation() { stopped = true },
