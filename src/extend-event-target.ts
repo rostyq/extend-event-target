@@ -74,6 +74,12 @@ export default function(obj: object): object {
   }
 
   prototype.dispatchEvent = function(event: Event): boolean {
+    if (arguments.length == 0) {
+      throw new TypeError(
+        "Failed to execute 'dispatchEvent' on 'EventTarget': 1 argument required, but only 0 present."
+      );
+    }
+
     if (!(event instanceof Event)) {
       throw new TypeError(
         "Failed to execute 'dispatchEvent' on 'EventTarget': parameter 1 is not of type 'Event'."
