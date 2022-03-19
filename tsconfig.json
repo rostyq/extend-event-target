@@ -5,7 +5,8 @@
     "strict": true,
     "target": "ES2015",
     "module": "ES2015",
-    "removeComments": true
+    "removeComments": true,
+    "esModuleInterop": true
   },
   "files": [
     "src/extend-event-target.ts"
