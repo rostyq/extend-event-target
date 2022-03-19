@@ -36,7 +36,7 @@ export default function(obj: object): object {
       );
     }
 
-    if (typeof listener !== "object") {
+    if (!(listener instanceof Object)) {
       throw new TypeError(
         "TypeError: Failed to execute 'addEventListener' on 'EventTarget': parameter 2 is not of type 'Object'."
       );
