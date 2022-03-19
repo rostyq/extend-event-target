@@ -4,12 +4,16 @@
     "declaration": true,
     "strict": true,
     "target": "ES2015",
-    "module": "CommonJS",
     "removeComments": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
   },
   "ts-node": {
-    "esm": true
+    "transpileOnly": true,
+    "esm": true,
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+    }
   }
 }
