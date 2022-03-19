@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declarationDir": "dist",
+    "declaration": true,
+    "strict": true,
+    "target": "ES2015",
+    "module": "ES2015",
+    "removeComments": true
+  },
+  "files": [
+    "extend-event-target.ts"
+  ]
+}
