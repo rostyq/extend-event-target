@@ -4,11 +4,12 @@
     "declaration": true,
     "strict": true,
     "target": "ES2015",
-    "module": "ES2015",
+    "module": "CommonJS",
     "removeComments": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "node"
   },
-  "files": [
-    "src/extend-event-target.ts"
-  ]
+  "ts-node": {
+    "esm": true
+  }
 }

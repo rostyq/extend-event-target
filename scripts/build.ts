@@ -1,7 +1,7 @@
-import { build, analyzeMetafile } from "esbuild";
+import { build, analyzeMetafile, BuildOptions } from "esbuild";
 import { dtsPlugin as dts } from "esbuild-plugin-d.ts";
 
-const common = {
+const common: BuildOptions = {
   entryPoints: [ "./src/extend-event-target.js" ],
   platform: "browser",
   bundle: true,
