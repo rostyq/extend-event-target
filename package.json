@@ -1,9 +1,8 @@
 {
   "name": "extend-event-target",
   "description": "Add EventTarget interface to existing object",
-  "version": "1.0.0",
-  "browser": "dist/extend-event-target.min.js",
-  "module": "dist/extend-event-target.js",
+  "version": "1.0.1",
+  "browser": "dist/extend-event-target.js",
   "types": "dist/extend-event-target.d.ts",
   "scripts": {
     "build": "ts-node scripts/build.ts",
