@@ -6,6 +6,7 @@
     "target": "ES2015",
     "removeComments": true,
     "esModuleInterop": true,
+    "moduleResolution": "node"
   },
   "ts-node": {
     "transpileOnly": true,
