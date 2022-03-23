@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "declarationDir": "dist",
+    "declarationDir": "types",
     "declaration": true,
     "strict": true,
     "target": "ES2015",
@@ -8,6 +8,9 @@
     "esModuleInterop": true,
     "moduleResolution": "node"
   },
+  "include": [
+    "src/*.ts",
+  ],
   "ts-node": {
     "transpileOnly": true,
     "esm": true,

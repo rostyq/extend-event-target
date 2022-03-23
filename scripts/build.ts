@@ -1,17 +1,16 @@
-import { build, analyzeMetafile, BuildOptions } from "esbuild";
-import { dtsPlugin as dts } from "esbuild-plugin-d.ts";
+import { build, BuildConfig, dirname } from "estrella";
 
-const common: BuildOptions = {
-  entryPoints: [ "./src/extend-event-target.js" ],
+const common: BuildConfig = {
+  entry: "./src/extend-event-target.js",
   platform: "browser",
   bundle: true,
+  cwd: dirname(__dirname),
 }
 
 build({
   ...common,
   outfile: "./dist/extend-event-target.js",
   format: "esm",
-  plugins: [ dts() ]
 })
 
 build({
@@ -23,5 +22,3 @@ build({
   sourcemap: "external",
   metafile: true,
 })
-  .then(result => analyzeMetafile(result.metafile))
-  .then(text => console.log(text))
