@@ -14,7 +14,8 @@
     "prepare": "npm run build -- --no-diag & npm run types"
   },
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "keywords": [
     "javascript"
