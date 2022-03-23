@@ -11,6 +11,7 @@ build({
   ...common,
   outfile: "./dist/extend-event-target.js",
   format: "esm",
+  minify: false,
 })
 
 build({
